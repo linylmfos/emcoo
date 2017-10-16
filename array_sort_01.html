@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <script>
+        var a=[1,0,3,0,7,0,4];
+        var b = new Array();
+        var c = [],d=[];
+
+        b = a.sort();
+        for(var i=0;i<b.length;i++){
+            if(b[i]!=0){
+                c.push(b[i]);
+            }else{
+                d=b.slice(0,i+1);
+            }
+        }
+        alert(c.concat(d));
+
+    </script>
+</body>
+</html>
